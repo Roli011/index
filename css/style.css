@@ -1,5 +1,6 @@
-table{
+
+td{
     border: 2px;
-    width: 600px;
-    height: 400px;
+    width: 20px;
+    height: 10px;
 }
