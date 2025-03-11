@@ -1,4 +1,6 @@
-
+body{
+    background-color: greenyellow;
+}
 td{
     border: 2px;
     width: 20px;
