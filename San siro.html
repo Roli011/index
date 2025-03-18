@@ -5,12 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>San Siro</title>
     <style>
+        .container {
+  position: relative;
+  width: 50%;
+}
+
         img{
+            opacity: 1;
+  display: block;
             width: 300px;
             height: 250px;
             margin: 70px;
             border-radius: 70px;
-            transform: rotateY(150deg);
+            transition: .5s ease;
+            backface-visibility: hidden;
+        }
+        .middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
         
       
     </style>
@@ -25,9 +58,28 @@
     <br>
     <br>
     <br>
-    <img src="./img/san-siro-1940307_1280.jpg" alt="" >
+   <div>
+    <img src="./img/san-siro-1940307_1280.jpg" alt="" class="image">
+    <div class="middle">
+      <div class="text">SAN SIRO</div>
+    </div>
+  </div>
+
+
+
     <img src="./img/soccer-3560066_1280.jpg" alt="">
+
+
+
+
+
+
     <img src="./img/stadium-3526512_1280.jpg" alt="">
+
+
+
+
+
     <img src="./img/stadium-5079188_1280.jpg" alt="">
 </body>
 
